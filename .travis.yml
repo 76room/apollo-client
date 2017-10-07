@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+   - node
+
+before_script:
+   - npm install -g --silent @angular/cli
+
+script:
+   - ng build --prod
+
+notifications:
+  email:
+    recipients:
+    - oleksandr.chzhen@gmail.com
+    - alexzatsepin7@gmail.com
+    - arsenzhd@gmail.com
+    on_failure: always
+    on_success: change
