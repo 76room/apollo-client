@@ -16,4 +16,4 @@ notifications:
     - alexzatsepin7@gmail.com
     - arsenzhd@gmail.com
     on_failure: always
-    on_success: change
+    on_success: never
