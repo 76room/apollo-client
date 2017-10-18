@@ -19,6 +19,13 @@
             "testTsconfig": "tsconfig.spec.json",
             "prefix": "app",
             "styles": [
+                "styles/audio.scss",
+                "styles/bootstrap.scss",
+                "styles/easy-responsive-tabs.scss",
+                "styles/font-awesome.scss",
+                "styles/icon-font.scss",
+                "styles/jplayer.blue.monday.min.scss",
+                "styles/popuo-box.scss",
                 "styles/styles.scss"
             ],
             "scripts": [
