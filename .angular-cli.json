@@ -29,6 +29,19 @@
                 "styles/styles.scss"
             ],
             "scripts": [
+                "scripts/bootstrap.js",
+                "scripts/classie.js",
+                "scripts/easyResponsiveTabs.js",
+                "scripts/jplayer.playlist.min.js",
+                "scripts/jquery-2.1.4.js",
+                "scripts/jquery.flexisel.js",
+                "scripts/jquery.jplayer.min.js",
+                "scripts/jquery.magnific-popup.js",
+                "scripts/jquery.nicescroll.js",
+                "scripts/mediaelement-and-player.min.js",
+                "scripts/responsiveslides.min.js",
+                "scripts/scripts.js",
+                "scripts/uisearch.js",                
                 "vendor.ts"
             ],
             "environmentSource": "environments/environment.ts",
