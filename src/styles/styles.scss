@@ -265,15 +265,15 @@ ul.dropdown-menu.drp-mnu li {
 }
 
 .custom-nav > li.menu-list.active > a {
-    background-image: url(../assets/images/plus.png);
+    // background-image: url(../assets/images/plus.png);
 }
 
 .custom-nav > li.nav-active.active > a {
-    background-image: url(../assets/images/minus.png);
+    // background-image: url(../assets/images/minus.png);
 }
 
 .custom-nav > li.nav-active.active > a:hover {
-    background-image: url(../assets/images/minus.png);
+    // background-image: url(../assets/images/minus.png);
 }
 
 .custom-nav li .fa {
@@ -870,7 +870,7 @@ footer  p a:hover{
     text-decoration: none;
         height: 79px;
     width: 30px;
-    background: transparent url("../assets/images/arrows.png") no-repeat left top;
+    //background: transparent url("../assets/images/arrows.png") no-repeat left top;
     margin-top:3%;
 	display:none;
 }
@@ -1568,19 +1568,19 @@ i.fb{
 	width:379px;
 	height: 150px;
 	display: block;
-	background: url(../assets/images/fb.png)#3b5997 no-repeat 145px 25px;
+	// background: url(../assets/images/fb.png)#3b5997 no-repeat 145px 25px;
 }
 i.tw{
     width: 380px;
 	height: 150px;
 	display: block;
-	background: url(../assets/images/tw.png)#3fccfd no-repeat 145px 25px;
+	// background: url(../assets/images/tw.png)#3fccfd no-repeat 145px 25px;
 }
 i.pin{
     width: 380px;
 	height: 150px;
 	display: block;
-	background: url(../assets/images/pin.png)#cb2027 no-repeat 145px 25px;
+	// background: url(../assets/images/pin.png)#cb2027 no-repeat 145px 25px;
 }
 .jp-volume-controls button {
     display: block;
@@ -1601,7 +1601,7 @@ i.pin{
 	    box-shadow:none!important;
 }
 .jp-state-playing .jp-play {
-    background: url(../assets/images/jplayer.blue.monday.png) 0 -42px no-repeat;
+    // background: url(../assets/images/jplayer.blue.monday.png) 0 -42px no-repeat;
     box-shadow:none!important;
 }
 .jp-toggles button {
@@ -2848,16 +2848,16 @@ ul.side-icons li a:hover{
  opacity:0.4;
 }
 ul.side-icons li a.fb{
- background:url('../assets/images/icons.png') no-repeat 0px 0px;
+//  background:url('../assets/images/icons.png') no-repeat 0px 0px;
 }
 ul.side-icons li a.twitt{
- background:url('../assets/images/icons.png') no-repeat -26px 0px;
+//  background:url('../assets/images/icons.png') no-repeat -26px 0px;
 }
 ul.side-icons li a.goog{
- background:url('../assets/images/icons.png') no-repeat -52px 0px;
+//  background:url('../assets/images/icons.png') no-repeat -52px 0px;
 }
 ul.side-icons li a.drib{
- background:url('../assets/images/icons.png') no-repeat -78px 0px;
+//  background:url('../assets/images/icons.png') no-repeat -78px 0px;
 }
 /*-- w3l-agile --*/
 /*-- agileits --*/
