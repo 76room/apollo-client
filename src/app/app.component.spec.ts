@@ -2,10 +2,14 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { FooterNavComponent } from './footer-nav/footer-nav.component';
 import { LeftSideNavComponent } from './left-side-nav/left-side-nav.component';
+import { SigninModule } from './signin';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
+            imports: [
+                SigninModule
+            ],
             declarations: [
                 AppComponent,
                 LeftSideNavComponent,
