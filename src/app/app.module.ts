@@ -1,20 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { LeftSideNavComponent } from './left-side-nav/left-side-nav.component';
-import { FooterNavComponent } from './footer-nav/footer-nav.component';
 import { SigninModule } from './signin';
+import { NavigationModule } from './navigation';
 
 @NgModule({
     imports: [
         BrowserModule,
-        SigninModule
+        NavigationModule,
+        SigninModule,
+        RouterModule.forRoot(appRoutes)
     ],
     declarations: [
-        AppComponent,
-        LeftSideNavComponent,
-        FooterNavComponent
+        AppComponent
     ],
     providers: [],
     bootstrap: [AppComponent]

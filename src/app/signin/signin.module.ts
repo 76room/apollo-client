@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
-import { SigninModalComponent } from './signin-modal/signin-modal.component';
-import { LoginModalComponent } from './login-modal/login-modal.component';
+import { SigninFormComponent } from './signin-form/signin-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
     declarations: [
-        SigninModalComponent,
-        LoginModalComponent
+        SigninFormComponent,
+        LoginFormComponent
     ],
     exports: [
-        SigninModalComponent,
-        LoginModalComponent
+        SigninFormComponent,
+        LoginFormComponent
     ]
 })
-export class SigninModule {
-
-}
+export class SigninModule { }

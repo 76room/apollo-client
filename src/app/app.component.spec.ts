@@ -1,19 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { FooterNavComponent } from './footer-nav/footer-nav.component';
-import { LeftSideNavComponent } from './left-side-nav/left-side-nav.component';
 import { SigninModule } from './signin';
+import { NavigationModule } from './navigation';
+import { appRoutes } from './app.routes';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
-                SigninModule
+                RouterModule,
+                SigninModule,
+                NavigationModule,
+                RouterModule.forRoot(appRoutes)
             ],
             declarations: [
-                AppComponent,
-                LeftSideNavComponent,
-                FooterNavComponent
+                AppComponent
             ],
         }).compileComponents();
     }));
