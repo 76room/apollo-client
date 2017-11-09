@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { APP_BASE_HREF } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SigninModule } from './signin';
@@ -9,10 +10,12 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
-                RouterModule,
                 SigninModule,
                 NavigationModule,
                 RouterModule.forRoot(appRoutes)
+            ],
+            providers: [
+                { provide: APP_BASE_HREF, useValue: '/' }
             ],
             declarations: [
                 AppComponent
