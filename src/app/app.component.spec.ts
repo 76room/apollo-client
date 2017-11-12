@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { SigninModule } from './signin';
 import { NavigationModule } from './navigation';
 import { appRoutes } from './app.routes';
+import { HomeComponent } from './home.component';
+import { WelcomeComponent } from './welcome.component';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
@@ -18,7 +20,9 @@ describe('AppComponent', () => {
                 { provide: APP_BASE_HREF, useValue: '/' }
             ],
             declarations: [
-                AppComponent
+                AppComponent,
+                HomeComponent,
+                WelcomeComponent
             ],
         }).compileComponents();
     }));

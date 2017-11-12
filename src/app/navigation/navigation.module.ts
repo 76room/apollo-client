@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { LeftSideNavComponent } from './left-side-nav/left-side-nav.component';
-import { FooterNavComponent } from './footer-nav/footer-nav.component';
-import { SharedModule } from '../shared';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared';
+import { NavbarTopComponent } from './navbar-top/navbar-top.component';
+import { FooterNavComponent } from './footer-nav/footer-nav.component';
 
 @NgModule({
     imports: [
@@ -10,11 +10,11 @@ import { RouterModule } from '@angular/router';
         SharedModule
     ],
     declarations: [
-        LeftSideNavComponent,
+        NavbarTopComponent,
         FooterNavComponent
     ],
     exports: [
-        LeftSideNavComponent,
+        NavbarTopComponent,
         FooterNavComponent
     ]
 })
