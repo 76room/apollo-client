@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { LeftSideNavComponent } from './left-side-nav/left-side-nav.component';
 import { FooterNavComponent } from './footer-nav/footer-nav.component';
+import { SharedModule } from '../shared';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     imports: [
-        CommonModule
+        RouterModule,
+        SharedModule
     ],
     declarations: [
         LeftSideNavComponent,

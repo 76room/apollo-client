@@ -45,13 +45,10 @@
 
 					<div class="col-md-4 login-pop">
 						<div id="loginpop">
-							<a href="#" id="loginButton">
-								<span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span>
+							<a [routerLink]="['/login']">
+								<span>Login</span>
 							</a>
-							<a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
-							<div id="loginBox">
-								<!-- <login-modal></login-modal> -->
-							</div>
+							<a class="top-sign" [routerLink]="['/signin']" ><i class="fa fa-sign-in"></i></a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
