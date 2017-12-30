@@ -1,19 +1,28 @@
 import { TestBed, async } from '@angular/core/testing';
+import { APP_BASE_HREF } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { FooterNavComponent } from './footer-nav/footer-nav.component';
-import { LeftSideNavComponent } from './left-side-nav/left-side-nav.component';
 import { SigninModule } from './signin';
+import { NavigationModule } from './navigation';
+import { appRoutes } from './app.routes';
+import { HomeComponent } from './home.component';
+import { WelcomeComponent } from './welcome.component';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
-                SigninModule
+                SigninModule,
+                NavigationModule,
+                RouterModule.forRoot(appRoutes)
+            ],
+            providers: [
+                { provide: APP_BASE_HREF, useValue: '/' }
             ],
             declarations: [
                 AppComponent,
-                LeftSideNavComponent,
-                FooterNavComponent
+                HomeComponent,
+                WelcomeComponent
             ],
         }).compileComponents();
     }));
